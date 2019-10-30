@@ -1,38 +1,68 @@
-html, body {
-    margin: 0;
-    padding: 0;
+body {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(250, 243, 221, 1);
 }
 
-#wrapper {
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+h1, h2, h3 {
+    color: rgba(255, 166, 158, 1);
 }
 
-#welcome {
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
+p {
+    color: rgba(94, 100, 114, 1);;
+}
+
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
+  }
+
+#inner {
+    width: 50%;
     max-width: 500px;
+    height: 50%;
+    max-height: 400px;
+    margin: auto;
+    padding: 0 20px;
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 h1 {
     width: 100%;
 }
 
-@media (min-width: 600px) {
-    #welcome {
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
-    }   
-}
-
-.card {
-    width: 200px;
-}
-
 .btn {
+    width: 30%;
+    height: 60px;
+    margin: 0 10px;
+    background-color: rgba(184, 242, 230, 1);
+    padding: 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.btn:hover {
+    background-color: rgba(255, 166, 158, 1);
+    border: 2px dashed rgba(255, 166, 158, 1);
+}
+
+@media (max-width: 600px) {
+    .btn {
+        width: 100%;
+    }
+}
+
+#language {
+    padding: 5px;
+}
+
+#language:hover {
+    border: 2px dashed rgba(255, 166, 158, 1);
 }
